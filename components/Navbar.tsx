@@ -6,12 +6,12 @@ export function Navbar() {
     const address = useAddress();
 
     return (
-        <Box maxW={"1200px"} m={"auto"} py={"10px"}px={"40px"}>
+        <Box maxW={"1200px"} m={"auto"} py={"2%"}px={"1%"}>
             <Flex justifyContent={"space-between"} alignItems={"center"}>
                 <Link as={NextLink} href='/'>
-                    <Heading>Marketplace</Heading>
+                    <Heading>SkyHi</Heading>
                 </Link>
-                <Flex direction={"row"}>
+                <Flex direction={"column"}>
                     {/* <Link as={NextLink} href='/buy' mx={2.5}>
                         <Text>Buy</Text>
                     </Link> */}
@@ -23,7 +23,7 @@ export function Navbar() {
                     <ConnectWallet/>
                     {address && (
                         <Link as={NextLink} href={`/profile/${address}`}>
-                            <Avatar src='https://bit.ly/broken-link' ml={"20px"}/>
+                            <Avatar src='https://bit.ly/broken-link' ml={"10px"}/>
                         </Link>
                     )}
                 </Flex>
